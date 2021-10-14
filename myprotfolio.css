@@ -700,8 +700,7 @@ font-family: popins;
     padding: 6px 14px;
     box-shadow: -13px -2px 12px #00000085;
 }
-.contactform .input textarea {
-    padding-left: 122px;
+.contactform .input textarea { padding-left: 122px;
 }
 }
 
