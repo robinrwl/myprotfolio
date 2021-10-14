@@ -95,7 +95,7 @@ header .navigation li a:hover{
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background: url(/main.jpg);
+    background: url(main.jpg);
     background-size: cover;
     display: flex;
     align-items: center;
@@ -336,7 +336,7 @@ b{
     color: var(--red);
 }
 .servises .content {
-    background-image: url(/m5.jpg);
+    background-image: url(m5.jpg);
     object-fit: cover;
     display: flex;
     justify-content: center;
@@ -558,7 +558,7 @@ font-size: 1em;
 .toggle.active{
     height: 30px;
     width: 30px;
-    background-image: url(/Cross.jpg);
+    background-image: url(Cross.jpg);
     background-position: center;
     object-fit: contain;
     background-repeat: no-repeat;
@@ -571,7 +571,7 @@ font-size: 1em;
     width: 30px;
     height: 30px;
     background-color: rgb(46, 6, 65);
-    background-image: url(/Menu.png);
+    background-image: url(Menu.png);
     position: relative;
     border-radius: 2px solid var(--white);
     background-repeat: no-repeat;
@@ -601,7 +601,7 @@ font-size: 1em;
     text-align: left;
 }
 .home{
-    background-image: url(/main2.jpg);
+    background-image: url(main2.jpg);
     object-fit: contain;
     height: 82vh;
 }
