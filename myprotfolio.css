@@ -5,7 +5,6 @@
     font-family: 'Poppins', sans-serif;
     cursor: default;
 scroll-behavior: smooth;
-
 }
 :root{
     --black: #000;
@@ -33,7 +32,7 @@ header{
     justify-content: space-between;
     width: 100%;
     padding:20px 100px;
-    font-family: cursive;
+    font-family: 'Poppins', sans-serif;
     z-index: 2;
     transition: 0.5s;
     background: var(--lightblack);
@@ -45,14 +44,14 @@ header.sticky{
 header .logo {
 font-size: 2em;
 font-weight: bold;
-font-family: cursive;
+font-family: 'Poppins', sans-serif;
 color: rgb(0, 159, 251);
 text-shadow: 5px 5px 10px rgb(1, 139, 139);
 text-decoration: none;
 }
 header .logo a{
     font-weight: bold;
-    font-family: cursive;
+    font-family: 'Poppins', sans-serif;
 }
 
 header .logo span{
@@ -101,7 +100,7 @@ header .navigation li a:hover{
     align-items: center;
     justify-content: center;
     margin-top: 63px;
-    font-family:cursive;
+    font-family:'Poppins', sans-serif;
 }
  .home .mainframe{
     position: absolute;
@@ -140,7 +139,7 @@ flex-wrap: wrap;
      background-color: #d135358a;
      display: inline-block;
      padding: 10px 10px;
-     font-family: cursive;
+     font-family: 'Poppins', sans-serif;
      text-decoration: none;
      margin-top: 20px;
      text-transform: uppercase;
@@ -291,21 +290,21 @@ b{
     width: 100%;
     background: var(--white);
     position: absolute;
-    left: 80%;
+    left: 65%;
     top: 0px;
 
 }
 .css .progressbar::after{
-    left: 70%;
+    left: 65%;
 }
 .js .progressbar::after{
-    left: 50%;
+    left: 45%;
 }
 .seo .progressbar::after{
     left: 60%;
 }
 .bootstrap .progressbar::after{
-    left: 60%;
+    left: 58%;
 }
 .photoshop .progressbar::after{
     left: 60%;
@@ -324,7 +323,7 @@ b{
 
 }
 .servises .title{
-    background-image: url(/m5.jpg);
+    background-image: url(m5.jpg);
     object-fit: fill;
 }
 .title .titletext h3 {
@@ -395,8 +394,8 @@ b{
      box-shadow: 10px 15px 20px rgb(100, 160, 160);
  }
  .boxwork .imgbox{
-       width: 400px;
-        height: 400px;
+       width: 350px;
+        height: 350px;
         margin-bottom: 20px;
  }
  .boxwork .imgbox img{
@@ -422,7 +421,7 @@ b{
  }
  .boxwork .text h3 a{
      text-decoration: none;
-     font-family: cursive;
+     font-family: 'Poppins', sans-serif;
  }
  .boxwork .text h3:hover{
      letter-spacing: 1px;
@@ -484,7 +483,7 @@ b{
     background-color: #078a83;
     display: inline-block;
     padding: 10px 10px;
-    font-family: cursive;
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
     margin-top: 10px;
     text-transform: uppercase;
@@ -536,7 +535,7 @@ font-size: 1em;
 }
 .copyrighttext a{
     color: var(--red);
-    font-family: cursive;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     text-decoration: none;
 }
@@ -544,8 +543,12 @@ font-size: 1em;
 /*Responisve design  */
 
 @media(max-width: 991px){
+    *{
+        overflow-x:hidden;
+    }
  header{
         padding: 20px;
+        max-width: 100%;
     }
  header .logo {
         font-size: 1.2em;
@@ -604,6 +607,7 @@ font-size: 1em;
     background-image: url(main2.jpg);
     object-fit: contain;
     height: 82vh;
+    max-width: 100%;
 }
 .home .mainframe {
     position: relative;
@@ -626,8 +630,9 @@ font-size: 1em;
 }
 .aboutbox .box {
     position: relative;
-    width: 100%;
+    width: 100vw;
     text-align: justify;
+    padding: 1px 37px 8px 0px;
 }
 .about .box p {
     font-size: 1em;
@@ -635,22 +640,14 @@ font-size: 1em;
 }
 .aboutbox{
     margin-top: 0px;
-    
+    flex-direction: column-reverse;   
+     padding-left: 0px;
 }
-
-.fullbox h2 {
-    width: 100%;
-margin-left: 25%;}
-
-.aboutbox {
-    flex-direction: column-reverse;    padding-left: 14px;
-}
-
-.aboutbox .box .imgbx{
+.aboutbox .box .imgbx {
     margin-top: 20px;
     height: 100%;
+    width: 100vw;
 }
-
 .about h3 {
     font-size: 1.6em;
     font-weight: bold;
@@ -658,6 +655,10 @@ margin-left: 25%;}
 .box h3{
         margin-top: 13px;
 }
+
+.fullbox h2 {
+    width: 100%;
+margin-left: 25%;}
 
  .contact p, .home p, .servises p, .content p
 {
@@ -700,8 +701,10 @@ font-family: popins;
     padding: 6px 14px;
     box-shadow: -13px -2px 12px #00000085;
 }
-.contactform .input textarea { padding-left: 122px;
+.contactform .input textarea {
+    padding-left: 122px;
 }
+
 }
 
    
