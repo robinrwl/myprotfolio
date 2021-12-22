@@ -275,26 +275,26 @@
     </ul>
 </div>
 
-<iframe name="hidden_iframe" id="hidden_iframe" style="display: none;"
-onload="if(submitted){ window.location= 'https://www.linkedin.com/in/robin-rawa21921b5/';}"> </iframe>
 <div class="contactform">
-    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc_kH0LjHP1og4JEPCmSonUBjefr74Xa194NGBJkrkZ75OG1Q/formResponse" onsubmit="sumbitted=true" method="POST" target="hidden_iframe">
+    <form action="https://script.google.com/macros/s/AKfycbwIePLPXTVcHQiJ8kuQANMLcQlZmCbw2m-NGOkoEwm7aQb-c2iKh-XqsuhpfAsEFxaT/exec"  id="my-form"
+    method="POST"  >
     <h3>Send your message</h3>
     <div class="input">
         <label for="email" ><p>Email</p>
-<input type="email" placeholder="Enter your email"   name="entry.1466879700" required ></label>
+<input type="email" placeholder="Enter your email"   name="email" required ></label>
 
     <label for="text"><p>  Name</p>
-<input type="text" placeholder="Enter your name" name="entry.511568770" required> </label>
+<input type="text" placeholder="Enter your name" name="name" required> </label>
   
     <label for="text"><p>Contct</p>
-<input type="number" placeholder="Contact Number" name="entry.167149814"  required> </label>
+<input type="number" placeholder="Contact Number" name="contact_no"  required> </label>
 
     <label for="Message"><p>Message</p>
-    <textarea id="Message" placeholder="Message" name="entry.1321409199" required ></textarea></label>
+    <textarea id="Message" placeholder="Message" name="message" required ></textarea></label>
 <input type="Submit">
 </div>
 </form>
+</div>
 </div>
 </section>
 
@@ -305,6 +305,22 @@ onload="if(submitted){ window.location= 'https://www.linkedin.com/in/robin-rawa2
     </div>
 </div>
 <script type="text/javascript">
+
+      window.addEventListener("load", function() {
+        const form = document.getElementById('my-form');
+        form.addEventListener("submit", function(e) {
+          e.preventDefault();
+          const data = new FormData(form);
+          const action = e.target.action;
+          fetch(action, {
+            method: 'POST',
+            body: data,
+          })
+          .then(() => {
+            alert("THANKYOU!! Your form has been submitted succesfully ");
+          })
+        });
+      });
 
 var sumbitted = false;
 window.addEventListener('scroll', function(){
